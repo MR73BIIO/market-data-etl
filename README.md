@@ -4,6 +4,9 @@ De-duplicates, sorts, detects missing intervals, back-fills them, and verifies
 100% coverage before writing the clean archive.
 
 ## Run
-    pip install pandas numpy
-    python make_raw_feed.py     # sample messy feed
-    python etl_pipeline.py raw_feed.csv
+
+```
+pip install pandas numpy
+python make_raw_feed.py        # tworzy raw_feed.csv + _reference_source.csv
+python etl_pipeline.py raw_feed.csv
+```
